@@ -14,9 +14,9 @@ Communication between Nuclide and Nuclide-remote uses 2 ports:
 Setup access to a project at `/src` on a remote host on `192.100.01.10`.
 Ssh will be run over port `2222` and `9090` will be used by Nuclide for communication.
 
-On the remote host start this Docker container. Prebuilt image `nofarius/nuclide-remote` available on Docker-Hub:
+On the remote host start this Docker container. Prebuilt image `miplan/nuclide-remote` available on Docker-Hub:
 
-    sudo docker run -d -p 9090:9090 -p 2222:22 -v ~/src:/src nofarius/nuclide-remote
+    sudo docker run -d -p 9090:9090 -p 2222:22 -v ~/src:/src miplan/nuclide-remote
 
 On the local machine start Nuclide, select *Packages/Connect..* and enter the connection information:
 
