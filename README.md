@@ -3,13 +3,13 @@ The Nuclide-remote Docker container enables remote editing with Nuclide.
 Further documentation about Nuclide can be found at:
 http://nuclide.io/docs/remote/
 
-### Connectivity
+## Connectivity
 
 Communication between Nuclide and Nuclide-remote uses 2 ports:
 - ssh/2222: needed to start nuclide remote inside Docker container
 - 9090: the Nuclide communication channel
 
-### Example
+## Example
 
 Setup access to a project at `/src` on a remote host on `192.100.01.10`.
 Ssh will be run over port `2222` and `9090` will be used by Nuclide for communication.
@@ -28,4 +28,3 @@ On the local machine start Nuclide, select *Packages/Connect..* and enter the co
 - Remote Server Command: `nuclide-start-server -p 9090`
 
 After pressing ok the remote directory will show up in navigator and will be ready for editing.
-
